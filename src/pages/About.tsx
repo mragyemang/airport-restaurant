@@ -75,9 +75,11 @@ export default function About() {
               <p className="text-lg text-gray-400 mb-8 leading-relaxed">
                 With over two decades traversing the globe's culinary capitals—from the bustling markets of Tokyo to the timeless bistros of Paris—Chef Vance brings an international flair to every dish. His philosophy centers on taking classical techniques and infusing them with contemporary, unexpected flavors.
               </p>
-              <Button asChild variant="outline" className="border-primary/50 text-white hover:bg-primary/20 hover:text-white glass rounded-full px-8">
-                <Link to="/menu">Discover His Menu</Link>
-              </Button>
+              <Link to="/menu">
+                <Button variant="outline" className="border-primary/50 text-white hover:bg-primary/20 hover:text-white glass rounded-full px-8">
+                  Discover His Menu
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

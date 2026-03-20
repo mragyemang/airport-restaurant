@@ -4,14 +4,6 @@ import * as z from "zod";
 import { Calendar, Clock, Users, Mail, Phone, User, Plane } from 'lucide-react';
 
 import { Button } from "../components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "../components/ui/form";
 import { Input } from "../components/ui/input";
 
 // Schema for form validation
@@ -88,132 +80,82 @@ export default function Reservations() {
           <div className="glass-card p-8 md:p-10 rounded-[2rem] border-primary/20 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
             <h2 className="text-2xl font-bold text-white mb-8 border-b border-white/10 pb-4">Reservation Details</h2>
             
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Name field */}
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-gray-300">Full Name</FormLabel>
-                        <FormControl>
-                          <div className="relative">
-                            <User className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
-                            <Input placeholder="John Doe" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12" {...field} />
-                          </div>
-                        </FormControl>
-                        <FormMessage className="text-red-400" />
-                      </FormItem>
-                    )}
-                  />
-
-                  {/* Email field */}
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-gray-300">Email Address</FormLabel>
-                        <FormControl>
-                          <div className="relative">
-                            <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
-                            <Input type="email" placeholder="john@example.com" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12" {...field} />
-                          </div>
-                        </FormControl>
-                        <FormMessage className="text-red-400" />
-                      </FormItem>
-                    )}
-                  />
-
-                  {/* Phone field */}
-                  <FormField
-                    control={form.control}
-                    name="phone"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-gray-300">Phone Number</FormLabel>
-                        <FormControl>
-                          <div className="relative">
-                            <Phone className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
-                            <Input type="tel" placeholder="(555) 123-4567" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12" {...field} />
-                          </div>
-                        </FormControl>
-                        <FormMessage className="text-red-400" />
-                      </FormItem>
-                    )}
-                  />
-
-                  {/* Guests field */}
-                  <FormField
-                    control={form.control}
-                    name="guests"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-gray-300">Number of Guests</FormLabel>
-                        <FormControl>
-                          <select 
-                            {...field}
-                            className="flex h-12 w-full items-center justify-between rounded-md border border-white/10 bg-black/40 px-3 py-2 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary disabled:cursor-not-allowed disabled:opacity-50"
-                          >
-                            <option value="1">1 Person</option>
-                            <option value="2">2 People</option>
-                            <option value="3">3 People</option>
-                            <option value="4">4 People</option>
-                            <option value="5">5 People</option>
-                            <option value="6">6 People</option>
-                          </select>
-                        </FormControl>
-                        <FormMessage className="text-red-400" />
-                      </FormItem>
-                    )}
-                  />
-
-                  {/* Date field */}
-                  <FormField
-                    control={form.control}
-                    name="date"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-gray-300">Date</FormLabel>
-                        <FormControl>
-                          <div className="relative">
-                            <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
-                            <Input type="date" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12 [color-scheme:dark]" {...field} />
-                          </div>
-                        </FormControl>
-                        <FormMessage className="text-red-400" />
-                      </FormItem>
-                    )}
-                  />
-
-                  {/* Time field */}
-                  <FormField
-                    control={form.control}
-                    name="time"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-gray-300">Time</FormLabel>
-                        <FormControl>
-                          <div className="relative">
-                            <Clock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
-                            <Input type="time" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12 [color-scheme:dark]" {...field} />
-                          </div>
-                        </FormControl>
-                        <FormMessage className="text-red-400" />
-                      </FormItem>
-                    )}
-                  />
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Name field */}
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-gray-300">Full Name</label>
+                  <div className="relative">
+                    <User className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
+                    <Input placeholder="John Doe" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12" {...form.register("name")} />
+                  </div>
+                  {form.formState.errors.name && <p className="text-sm text-red-400">{form.formState.errors.name.message as string}</p>}
                 </div>
 
-                <div className="pt-6">
-                  <Button type="submit" className="w-full h-14 text-lg font-bold bg-primary text-primary-foreground hover:bg-primary/90 transition-transform hover:scale-[1.02] shadow-xl shadow-primary/20">
-                    Request Reservation
-                  </Button>
+                {/* Email field */}
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-gray-300">Email Address</label>
+                  <div className="relative">
+                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
+                    <Input type="email" placeholder="john@example.com" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12" {...form.register("email")} />
+                  </div>
+                  {form.formState.errors.email && <p className="text-sm text-red-400">{form.formState.errors.email.message as string}</p>}
                 </div>
-              </form>
-            </Form>
+
+                {/* Phone field */}
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-gray-300">Phone Number</label>
+                  <div className="relative">
+                    <Phone className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
+                    <Input type="tel" placeholder="(555) 123-4567" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12" {...form.register("phone")} />
+                  </div>
+                  {form.formState.errors.phone && <p className="text-sm text-red-400">{form.formState.errors.phone.message as string}</p>}
+                </div>
+
+                {/* Guests field */}
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-gray-300">Number of Guests</label>
+                  <select 
+                    {...form.register("guests")}
+                    className="flex h-12 w-full items-center justify-between rounded-md border border-white/10 bg-black/40 px-3 py-2 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary disabled:cursor-not-allowed disabled:opacity-50"
+                  >
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6 People</option>
+                  </select>
+                  {form.formState.errors.guests && <p className="text-sm text-red-400">{form.formState.errors.guests.message as string}</p>}
+                </div>
+
+                {/* Date field */}
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-gray-300">Date</label>
+                  <div className="relative">
+                    <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
+                    <Input type="date" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12 [color-scheme:dark]" {...form.register("date")} />
+                  </div>
+                  {form.formState.errors.date && <p className="text-sm text-red-400">{form.formState.errors.date.message as string}</p>}
+                </div>
+
+                {/* Time field */}
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-gray-300">Time</label>
+                  <div className="relative">
+                    <Clock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
+                    <Input type="time" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12 [color-scheme:dark]" {...form.register("time")} />
+                  </div>
+                  {form.formState.errors.time && <p className="text-sm text-red-400">{form.formState.errors.time.message as string}</p>}
+                </div>
+              </div>
+
+              <div className="pt-6">
+                <Button type="submit" className="w-full h-14 text-lg font-bold bg-primary text-primary-foreground hover:bg-primary/90 transition-transform hover:scale-[1.02] shadow-xl shadow-primary/20">
+                  Request Reservation
+                </Button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

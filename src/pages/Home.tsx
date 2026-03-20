@@ -60,12 +60,16 @@ export default function Home() {
             Where Fine Dining Meets the Journey
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto text-lg px-8 py-6 rounded-full shadow-lg shadow-primary/20 transition-all hover:scale-105" asChild>
-              <Link to="/reservations">Reserve a Table</Link>
-            </Button>
-            <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8 py-6 rounded-full border-white/20 text-white hover:bg-white/10 glass transition-all hover:scale-105" asChild>
-              <Link to="/menu">View Menu</Link>
-            </Button>
+            <Link to="/reservations">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto text-lg px-8 py-6 rounded-full shadow-lg shadow-primary/20 transition-all hover:scale-105">
+                Reserve a Table
+              </Button>
+            </Link>
+            <Link to="/menu">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8 py-6 rounded-full border-white/20 text-white hover:bg-white/10 glass transition-all hover:scale-105">
+                View Menu
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -126,9 +130,11 @@ export default function Home() {
                   <p className="text-sm text-gray-500">Expedited service available</p>
                 </div>
               </div>
-              <Button variant="outline" className="mt-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground" asChild>
-                <Link to="/about">Our Story</Link>
-              </Button>
+              <Link to="/about">
+                <Button variant="outline" className="mt-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  Our Story
+                </Button>
+              </Link>
             </div>
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl shadow-black/50">
               <img 
@@ -169,9 +175,11 @@ export default function Home() {
           <Utensils className="h-12 w-12 mx-auto mb-6 text-primary" />
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">Ready for Departure?</h2>
           <p className="text-xl text-gray-400 mb-10">Ensure your pre-flight experience is seamless by securing your table in advance.</p>
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-10 py-6 rounded-full shadow-lg shadow-primary/20 transition-all hover:scale-105" asChild>
-            <Link to="/reservations">Book Now</Link>
-          </Button>
+          <Link to="/reservations">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-10 py-6 rounded-full shadow-lg shadow-primary/20 transition-all hover:scale-105">
+              Book Now
+            </Button>
+          </Link>
         </div>
       </section>
 

@@ -37,9 +37,11 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link to="/reservations">Reserve a Table</Link>
-              </Button>
+              <Link to="/reservations">
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+                  Reserve a Table
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -68,9 +70,11 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button asChild className="w-full mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
-              <Link to="/reservations" onClick={toggleMenu}>Reserve a Table</Link>
-            </Button>
+            <Link to="/reservations" onClick={toggleMenu}>
+              <Button className="w-full mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
+                Reserve a Table
+              </Button>
+            </Link>
           </div>
         </div>
       )}
