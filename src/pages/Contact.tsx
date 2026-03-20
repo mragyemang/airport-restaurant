@@ -34,9 +34,9 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-white mb-2">Location</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    Terminal 4, Concourse B<br/>
+                    Sunyani Airport<br/>
                     Post-Security<br/>
-                    Queens, NY 11430
+                    Sunyani, Ghana
                   </p>
                 </div>
               </div>
@@ -49,7 +49,7 @@ export default function Contact() {
                   <h3 className="font-bold text-white mb-2">Hours</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">
                     Open Daily<br/>
-                    5:00 AM - 11:00 PM<br/>
+                    8:00 AM - 8:00 PM<br/>
                     (365 days a year)
                   </p>
                 </div>
@@ -62,7 +62,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-white mb-2">Phone</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    (555) 123-4567<br/>
+                    +233 593 457 520<br/>
                     Reservations: Ext 1<br/>
                     Events: Ext 2
                   </p>

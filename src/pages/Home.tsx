@@ -28,11 +28,11 @@ export default function Home() {
   const testimonials = [
     {
       quote: "The perfect start to our vacation. The food was as spectacular as the runway views.",
-      author: "Sarah Jenkins"
+      author: "Prince"
     },
     {
       quote: "Fine dining that actually delivers. Fast service without sacrificing any quality.",
-      author: "Michael Chen"
+      author: "Agyemang"
     }
   ];
 

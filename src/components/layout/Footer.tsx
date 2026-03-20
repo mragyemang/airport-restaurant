@@ -42,9 +42,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Contact Info</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Terminal 4, JFK Airport</li>
-              <li>Queens, NY 11430</li>
-              <li>(555) 123-4567</li>
+              <li>Sunyani Airport</li>
+              <li>Sunyani, Ghana</li>
+              <li>+233 593 457 520</li>
               <li>info@airportrestaurant.com</li>
             </ul>
           </div>
