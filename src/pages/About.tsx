@@ -27,7 +27,7 @@ export default function About() {
             </h1>
             <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
               <p>
-                Founded in 2018, Airport Restaurant was born from a simple observation: the modern traveler deserves a dining experience that matches the excitement of their destination. 
+                Founded in 2026, Airport Restaurant was born from a simple observation: the modern traveler deserves a dining experience that matches the excitement of their destination. 
               </p>
               <p>
                 Too often, airport dining is viewed as a necessary compromise. We challenged that notion by bringing Michelin-star techniques, globally sourced ingredients, and spectacular runway views together under one roof.
