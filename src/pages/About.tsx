@@ -46,7 +46,7 @@ export default function About() {
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
             <div className="absolute bottom-10 left-10 right-10 p-8 glass rounded-2xl">
               <p className="text-2xl font-serif italic text-white mb-2">&quot;Redefining the wait before the gate.&quot;</p>
-              <p className="text-primary font-bold uppercase tracking-wider text-sm">- Culinary Review 2025</p>
+              <p className="text-primary font-bold uppercase tracking-wider text-sm">- Culinary Review 2026</p>
             </div>
           </div>
         </div>
