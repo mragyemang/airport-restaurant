@@ -49,7 +49,7 @@ export default function Contact() {
                   <h3 className="font-bold text-white mb-2">Hours</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">
                     Open Daily<br/>
-                    8:00 AM - 7:00 PM<br/>
+                    8:00 AM - 10:00 PM<br/>
                     (365 days a year)
                   </p>
                 </div>
