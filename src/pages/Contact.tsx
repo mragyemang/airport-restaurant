@@ -62,7 +62,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-white mb-2">Phone</h3>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    +233 593 457 520<br/>
+                    +233 59 345 7520<br/>
                     Reservations: Ext 1<br/>
                     Events: Ext 2
                   </p>
