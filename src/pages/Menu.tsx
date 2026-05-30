@@ -96,8 +96,9 @@ export default function Menu() {
         </Tabs>
         
         <div className="mt-20 text-center glass p-8 rounded-2xl max-w-3xl mx-auto">
+          <h1 className="text-gray-400 text-xl underline mb-3" >NOTICE</h1>
           <p className="text-gray-400 italic">
-            * Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.
+            Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.
             Please inform your server of any dietary restrictions or allergies.
           </p>
         </div>
