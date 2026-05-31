@@ -87,7 +87,7 @@ export default function Reservations() {
                   <label className="text-sm font-medium text-gray-300">Full Name</label>
                   <div className="relative">
                     <User className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
-                    <Input placeholder="John Doe" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12" {...form.register("name")} />
+                    <Input placeholder="Prince Agyemang" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12" {...form.register("name")} />
                   </div>
                   {form.formState.errors.name && <p className="text-sm text-red-400">{form.formState.errors.name.message as string}</p>}
                 </div>
@@ -97,7 +97,7 @@ export default function Reservations() {
                   <label className="text-sm font-medium text-gray-300">Email Address</label>
                   <div className="relative">
                     <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
-                    <Input type="email" placeholder="john@example.com" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12" {...form.register("email")} />
+                    <Input type="email" placeholder="prince@example.com" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12" {...form.register("email")} />
                   </div>
                   {form.formState.errors.email && <p className="text-sm text-red-400">{form.formState.errors.email.message as string}</p>}
                 </div>
