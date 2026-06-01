@@ -107,7 +107,7 @@ export default function Reservations() {
                   <label className="text-sm font-medium text-gray-300">Phone Number</label>
                   <div className="relative">
                     <Phone className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 h-5 w-5" />
-                    <Input type="tel" placeholder="(555) 123-4567" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12" {...form.register("phone")} />
+                    <Input type="tel" placeholder="059 345 7520" className="pl-10 bg-black/40 border-white/10 text-white focus:border-primary h-12" {...form.register("phone")} />
                   </div>
                   {form.formState.errors.phone && <p className="text-sm text-red-400">{form.formState.errors.phone.message as string}</p>}
                 </div>
