@@ -107,16 +107,16 @@ export default function Contact() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="firstName" className="text-sm font-medium text-gray-300">First Name</label>
-                  <Input id="firstName" required className="bg-black/40 border-white/10 text-white focus:border-primary h-12" />
+                  <Input id="firstName" required placeholder="Prince" className="bg-black/40 border-white/10 text-white focus:border-primary h-12" />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="lastName" className="text-sm font-medium text-gray-300">Last Name</label>
-                  <Input id="lastName" required className="bg-black/40 border-white/10 text-white focus:border-primary h-12" />
+                  <Input id="lastName" required placeholder="Agyemang" className="bg-black/40 border-white/10 text-white focus:border-primary h-12" />
                 </div>
               </div>
               
               <div className="space-y-2">
-                <label htmlFor="email" className="text-sm font-medium text-gray-300">Email Address</label>
+                <label htmlFor="email" className="text-sm font-medium text-gray-300" >Email Address</label>
                 <Input id="email" type="email" required className="bg-black/40 border-white/10 text-white focus:border-primary h-12" />
               </div>
               
