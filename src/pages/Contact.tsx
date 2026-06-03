@@ -117,7 +117,7 @@ export default function Contact() {
               
               <div className="space-y-2">
                 <label htmlFor="email" className="text-sm font-medium text-gray-300" >Email Address</label>
-                <Input id="email" type="email" required className="bg-black/40 border-white/10 text-white focus:border-primary h-12" />
+                <Input id="email" type="email" placeholder='name@example.com' required className="bg-black/40 border-white/10 text-white focus:border-primary h-12" />
               </div>
               
               <div className="space-y-2">
