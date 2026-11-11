@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# Airport Restaurant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A restaurant website designed to introduce an airport dining experience and make key information easy to find for travelers.
 
-Currently, two official plugins are available:
+**Live site:** [airport-restaurant.vercel.app](https://airport-restaurant.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+Airport Restaurant is a responsive web application with pages for the restaurant's home, menu, story, reservations, and contact information. Its streamlined layout is built to help guests explore dining options and find reservation details.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Restaurant landing page
+- Dedicated menu and about pages
+- Reservation and contact pages
+- Responsive navigation and shared footer
+- Form handling built with React Hook Form and Zod
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Built With
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React 19 and TypeScript
+- Vite
+- React Router
+- Tailwind CSS
+- shadcn/ui and Base UI components
+- React Hook Form and Zod
+- Lucide React icons
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+
+- Node.js and npm
+
+### Install and run
+
+```bash
+git clone https://github.com/mragyemang/airport-restaurant.git
+cd airport-restaurant
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open the local URL printed by Vite to view the site.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Available Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Type-check and create a production build |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint |
+
+## Production Build
+
+```bash
+npm run build
 ```
+
+Vite writes the optimized site to `dist/`. Deploy this directory using a static hosting service such as Vercel.
+
+## Contributing
+
+Bug reports and feature ideas are welcome through GitHub Issues. For code changes, submit a pull request with a brief explanation and any relevant screenshots.
+
+## License
+
+No license is currently specified. All rights remain with the project owner unless a license is added.
